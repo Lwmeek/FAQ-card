@@ -110,6 +110,7 @@ p {
 	text-align: left;
 	margin-bottom: 2.5rem;
 	color: var(--clr-dark-grayish-blue);
+	display: none;
 }
 
 hr {
@@ -132,6 +133,7 @@ hr {
 	cursor: pointer;
 }
 
-/*.hide {
-    display: none;
-}*/
+.btn:focus h2 {
+	font-weight: 700;
+}
+
