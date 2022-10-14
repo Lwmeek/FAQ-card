@@ -1,0 +1,87 @@
+/* Universal styling */
+
+* {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+
+/* Colors */
+
+:root {
+	/* Text */
+	--clr-vDark-desaturated-blue: hsl(238, 29%, 16%);
+	--clr-soft-red: hsl(14, 88%, 65%);
+	--clr-vDark-grayish-blue: hsl(237, 12%, 33%);
+	--clr-dark-grayish-blue: hsl(240, 6%, 50%);
+	/* Gradient bg */
+	--clr-soft-violet: hsl(273, 75%, 66%);
+	--clr-soft-blue: hsl(240, 73%, 65%);
+	/* Divide line */
+	--clr-light-grayish-blue: hsl(240, 5%, 91%);
+}
+
+/* General styling */
+
+html {
+	font-size: 62.5%;
+}
+
+body {
+	font-size: 1.3rem;
+	font-family: "Kumbh Sans", sans-serif;
+	font-weight: 400;
+}
+
+/* Containers */
+
+.container {
+	width: 100vw;
+	height: 100vh;
+	background: linear-gradient(hsl(273, 75%, 66%) 25%, hsl(240, 73%, 65%));
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.main-container {
+	width: 80%;
+	padding: 1rem;
+	background: white;
+	border-radius: 25px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 3rem;
+}
+
+/* Images */
+
+.woman {
+	width: 23rem;
+	position: absolute;
+	top: 26rem;
+}
+
+.img-shadow {
+	width: 23.5rem;
+	position: relative;
+	top: -0.7rem;
+}
+
+/* Content */
+
+.content {
+	text-align: center;
+}
+h2 {
+	font-size: inherit;
+	font-weight: inherit;
+}
+
+button {
+	background: transparent;
+	border: none;
+	cursor: pointer;
+}
