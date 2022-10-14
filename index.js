@@ -1,12 +1,15 @@
 const buttons = document.querySelectorAll(".btn");
 const hidden = document.querySelectorAll(".hide");
 
-function myDisplay(answer) {
-	let show = document.getElementById(answer);
-	if (show.display === "none") {
-		console.log(answer);
-		show.display = "block";
-	} else {
-		console.log(answer);
-	}
-}
+buttons.forEach((button) => {
+	button.addEventListener("click", (event) => {
+		event.preventDefault();
+		let item = event.currentTarget.querySelector("#answer");
+		console.log(item.classList.contains("hide"));
+		if (item.classList.contains("hide") === true) {
+			item.classList.remove("hide");
+		} else {
+			item.classList.add("hide");
+		}
+	});
+});

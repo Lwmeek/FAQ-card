@@ -106,11 +106,10 @@ h2 {
 	color: var(--clr-vDark-grayish-blue);
 }
 
-p {
+#answer {
 	text-align: left;
 	margin-bottom: 2.5rem;
 	color: var(--clr-dark-grayish-blue);
-	display: none;
 }
 
 hr {
@@ -137,3 +136,6 @@ hr {
 	font-weight: 700;
 }
 
+.hide {
+	display: none;
+}
