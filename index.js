@@ -1,15 +1,17 @@
 const buttons = document.querySelectorAll(".btn");
-const hidden = document.querySelectorAll(".hide");
+const arrows = document.querySelectorAll(".arrows");
 
 buttons.forEach((button) => {
 	button.addEventListener("click", (event) => {
 		event.preventDefault();
-		let item = event.currentTarget.querySelector("#answer");
-		console.log(item.classList.contains("hide"));
+		const item = event.currentTarget.querySelector("#answer");
+		const arrow = event.currentTarget.querySelector(".arrows");
 		if (item.classList.contains("hide") === true) {
 			item.classList.remove("hide");
+			arrow.style.transform = "scale(-1, -1)";
 		} else {
 			item.classList.add("hide");
+			arrow.style.transform = "scale(1, 1)";
 		}
 	});
 });
