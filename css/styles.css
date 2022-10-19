@@ -106,6 +106,14 @@ h2 {
 	color: var(--clr-vDark-grayish-blue);
 }
 
+h2:hover {
+	color: var(--clr-soft-red);
+}
+
+h2:focus {
+	font-weight: 700;
+}
+
 #answer {
 	text-align: left;
 	margin-bottom: 2.5rem;
@@ -130,10 +138,6 @@ hr {
 	background: transparent;
 	border: none;
 	cursor: pointer;
-}
-
-.btn:focus h2 {
-	font-weight: 700;
 }
 
 .hide {
