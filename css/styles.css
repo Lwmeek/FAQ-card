@@ -160,36 +160,51 @@ hr {
 }
 
 @media screen and (min-width: 900px) {
+	.container {
+		flex-direction: column;
+		justify-content: flex-start;
+		padding-top: 10rem;
+	}
 	.main-container {
-		max-width: none;
+		max-width: 1050px;
 		max-height: none;
 		flex-direction: row;
-		flex-basis: 70%;
 		overflow: hidden;
 	}
+	.box {
+		display: block;
+		position: relative;
+		top: 40rem;
+		left: -1.2rem;
+		z-index: 99;
+	}
 	.content {
-		padding: 3rem;
+		padding: 3rem 3rem 3rem 3rem;
+		max-width: 400px;
 	}
 	h1 {
 		text-align: left;
 	}
 	.woman {
 		width: 100%;
+		max-width: 500px;
 		position: relative;
 		z-index: 1;
-		top: -6rem;
-		left: 11rem;
+		top: -2rem;
+		left: 14rem;
 		margin-bottom: -10rem;
 	}
 	.img-shadow {
+		min-width: 480px;
 		width: 100%;
+		max-width: 450px;
 		height: auto;
 		position: relative;
-		left: -19rem;
+		left: -36rem;
 		translate: 0%;
-		transform: scale(1.5, 1.5);
-		top: 10rem;
+		transform: scale(2, 2);
+		top: 3rem;
 		margin-bottom: 0;
-		margin-top: -45rem;
+		margin-top: -46.5rem;
 	}
 }
